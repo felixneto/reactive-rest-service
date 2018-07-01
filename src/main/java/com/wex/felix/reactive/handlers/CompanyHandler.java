@@ -8,7 +8,6 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 import com.wex.felix.reactive.model.Company;
 import com.wex.felix.reactive.repository.CompanyRepository;
-import com.wex.felix.reactive.repository.DummyCompanyRepository;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.web.reactive.function.BodyInserters.fromObject;

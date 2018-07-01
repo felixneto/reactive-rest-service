@@ -3,8 +3,6 @@ package com.wex.felix.reactive.repository;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.context.annotation.Bean;
-
 import com.wex.felix.reactive.model.Company;
 
 import reactor.core.publisher.Flux;
@@ -15,8 +13,8 @@ public class DummyCompanyRepository implements CompanyRepository {
 	private final Map<Integer, Company> company = new HashMap<>();
 
 	public DummyCompanyRepository() {
-		company.put(1, new Company("John Doe", "06299777000185"));
-		company.put(2, new Company("Jane Doe", "53838002000110"));
+		company.put(1, new Company("Felix Company", "06299777000185"));
+		company.put(2, new Company("Reactive manifesto inc.", "53838002000110"));
 	}
 
 	@Override
